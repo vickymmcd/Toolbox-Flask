@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            A Small Hello
+        </title>
+    </head>
+<body>
+    <h1>Hello!</h1>
+    {%if error%}
+      <p>{{error}}</p>
+    {%else%}
+      <p>Name: {{name}} </p>
+      <p>Age: {{age}} </p>
+      <p>Favorite Ninja: {{ninja}} </p>
+    {%endif%}
+      <form action='/'>
+          <input type="submit" value="Go Back">
+      </form>
+</body>
+</html>
